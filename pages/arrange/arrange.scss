@@ -1,0 +1,65 @@
+// 主页面内容部分样式
+.container{
+    .van-button--default{
+        font-size: 20px;
+        float:right;
+        background-color: #fff;
+        border: 0 !important;
+        margin-top:40rpx;
+        margin-right:20rpx;
+        .iconfont{
+            font-size: 50rpx;
+            font-weight: 600;
+            color: #2d7ca3;
+          }
+      }
+
+    .subtitle{
+        height: 70rpx;
+        width: 100%;
+        text-align: center;
+        line-height: 70rpx;
+        font-size: 32rpx;
+        background-image:linear-gradient(to right, #2d7ca3, #00a3be);
+        color: #fff;
+      }
+    .main_content{
+        display:flex;
+        height: 150vh;
+        .left_menu{
+            flex:1;
+            .van-sidebar{
+                .van-sidebar-item--selected{
+                   border-color: #2d7ca3; 
+                }
+            }
+        }
+        .rightContent{
+            flex:3;
+            overflow: hidden;
+            .van-cell{
+                font-size: 32rpx;
+                color: #2d7ca3;
+                font-weight: 600;
+                .van-cell__right-icon-wrap{
+                    color: #2d7ca3;
+                }
+            }
+            .content_detail{
+                font-size: 28rpx;
+                color: #333;
+                .dept{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin: 20rpx 0;
+                }
+
+            }
+        }
+        
+        
+        
+    }
+}
+

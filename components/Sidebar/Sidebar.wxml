@@ -1,0 +1,15 @@
+<!--components/Sidebar/Sidebar.wxml-->
+<view class="sidebar">
+    <van-sidebar active-key="{{ activeKey }}" bind:change="onChange">
+        <view class="image_row"> 
+            <image src="https://www.nbyzyy.com/Content/WebApp/images/logo2020.jpg" class="image"></image>
+        </view>
+        <van-sidebar-item title="一元简介" />
+        <van-sidebar-item title="一元动态" />
+        <van-sidebar-item title="科室介绍" />
+        <van-sidebar-item title="出诊安排" />
+        <van-sidebar-item title="专家介绍" />
+        <van-sidebar-item title="预约挂号" />
+        <van-sidebar-item title="联系我们" />
+    </van-sidebar>
+</view>

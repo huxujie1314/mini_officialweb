@@ -1,0 +1,103 @@
+<!-- 首页主页面开始 -->
+<view class="{{isShowSideBar?'hide':'leftPart'}}">
+  <view class="container">
+    <!-- 头部组件开始 -->
+    <Header>
+      <van-button bind:click="triggerSidebar">
+          <van-icon class="iconfont icon-gengduo" wx:if="{{isShowSideBar==false}}"></van-icon>
+          <van-icon class="iconfont icon-delete"  wx:if="{{isShowSideBar==true}}"></van-icon>
+      </van-button>
+    </Header>
+    <!-- 头部组件结束 -->
+    <!-- 分割线开始 -->
+    <van-divider />
+    <!-- 分割线结束 -->
+    <!-- 轮播图开始 -->
+    <view class="index_swiper">
+        <swiper autoplay indicator-dots circular>
+            <swiper-item wx:for="{{swiperList}}" wx:key="index">
+              <image src="{{item}}"></image>
+            </swiper-item>
+        </swiper>
+    </view>
+    <!-- 轮播图结束 -->
+    <!-- 明日专家门诊开始 -->
+    <view class="index_expert">
+      <view class="expert_title_row">
+          <view class="title">
+            明日专家门诊
+          </view>
+          <view class="title_button">
+            <navigator class="button" url="/pages/arrange/arrange"> 
+              <text class="iconfont icon-hao"></text>
+            </navigator>
+          </view>
+      </view>
+      <view class="expert_swiper">
+          <swiper autoplay  circular>
+            <swiper-item wx:for="{{expertList}}" wx:for-index="index1" wx:for-item="item1" wx:key="index1">
+              <view wx:for="{{item1}}" wx:for-item="item2" wx:for-index="index2" wx:key="index2">
+                <view class="item_detail">
+                  <navigator url="/pages/deptDetail/deptDetail?deptId={{item2.deptId}}">{{item2.dept}}</navigator>
+                  <view>{{item2.time}}</view>
+                  <view>{{item2.docName}}</view>
+                  
+                </view>
+              </view>
+            </swiper-item>
+           </swiper>
+      </view>
+      <view class="serve_time">
+          门诊服务时间：上午 07:30-11:30; 下午 14:00-17:00
+      </view>
+    </view>
+    <!-- 明日专家门诊结束 -->
+    <!-- 中间导航标签开始 -->
+    <view class="index_middleBar">
+      <navigator class="middleBar_item" wx:for="{{middleList}}" wx:key="index" url="{{item.navigate_url}}">
+        <view class="img_row" style="background-color:{{listColor[index]}}"><image src="{{item.iconUrl}}"></image></view>
+        <view>{{item.name}}</view>
+      </navigator>
+    </view>
+    <!-- 中间导航标签开始 -->
+    <!-- 医院动态开始 -->
+    <view class="index_info">
+      <view class="title_row">
+          <view class="title">
+            医院动态
+          </view>
+          <view class="title_button">
+            <navigator class="button" url="/pages/infos/infos"> 
+              <text class="iconfont icon-hao"></text>
+            </navigator>
+          </view>
+      </view>
+      <view class="info_content">
+
+        <view class="info_content_item"
+        wx:for="{{hostpitalInfos}}" wx:key="index">
+          <text>.</text>
+          <navigator url="/pages/infoDetail/infoDetail?aid={{item.aid}}">{{item.title}}</navigator>
+          <view class="date">{{item.date}}</view>
+        </view>
+      </view>
+    </view>
+    <!-- 医院动态结束 -->
+    <!-- 图片 -->
+    <view class="bottom_image_row">
+          <image src="https://www.nbyzyy.com/Content/WebApp/images/wszs.jpg"></image>
+    </view>
+    <!-- 图片结束 -->
+    <!-- 底部组件开始 -->
+    <footContent></footContent>
+    <!-- 底部组件结束 -->
+  </view>
+</view>
+<!-- 首页主页面结束 -->
+<!-- 侧边导航栏开始 -->
+<view class="sidebar">
+  <Sidebar wx:if="{{isShowSideBar}}" >
+  </Sidebar>
+</view>
+<!-- 侧边导航栏结束 bind:tabsItemChange="handleTabsChange"-->
+

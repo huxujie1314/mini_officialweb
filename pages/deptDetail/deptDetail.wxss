@@ -1,0 +1,74 @@
+@charset "UTF-8";
+page {
+  position: relative; }
+
+.hide {
+  position: absolute;
+  top: 0;
+  left: -360rpx;
+  width: 100vw; }
+
+.leftPart {
+  width: 100vw; }
+
+.container .van-button--default {
+  font-size: 20px;
+  float: right;
+  background-color: #fff;
+  border: 0 !important;
+  margin-top: 40rpx;
+  margin-right: 20rpx; }
+  .container .van-button--default .iconfont {
+    font-size: 50rpx;
+    font-weight: 600;
+    color: #2d7ca3; }
+
+.container .subtitle {
+  height: 70rpx;
+  width: 100%;
+  text-align: center;
+  line-height: 70rpx;
+  font-size: 32rpx;
+  background-image: linear-gradient(to right, #2d7ca3, #00a3be);
+  color: #fff; }
+
+.container .main_content {
+  color: #555;
+  font-size: 28rpx; }
+  .container .main_content .title {
+    margin: 0 30rpx;
+    padding: 30rpx 0;
+    font-size: 36rpx;
+    color: #2d7ca3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    border-bottom: 1px solid #ccc; }
+  .container .main_content .content {
+    padding: 30rpx;
+    color: #333;
+    font: 32rpx '宋体'; }
+    .container .main_content .content view {
+      text-indent: 60rpx;
+      line-height: 150%; }
+
+.sidebar {
+  position: absolute;
+  right: 0;
+  top: 0; }
+  .sidebar .van-sidebar {
+    width: 360rpx; }
+    .sidebar .van-sidebar .image_row {
+      height: 120rpx;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    .sidebar .van-sidebar image {
+      width: 80%;
+      height: 78rpx; }
+    .sidebar .van-sidebar .van-sidebar-item--selected {
+      border-color: #2d7ca3; }
+    .sidebar .van-sidebar .van-sidebar-item__text {
+      color: #2d7ca3;
+      font-weight: 600; }

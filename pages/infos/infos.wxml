@@ -1,0 +1,39 @@
+
+<!-- 首页主页面开始 -->
+<wxs module="tools" src="../../format.wxs"></wxs>
+<view class="{{isShowSideBar?'hide':'leftPart'}}">
+  <view class="container">
+    <!-- 头部组件开始 -->
+    <Header>
+      <van-button bind:click="triggerSidebar">
+          <van-icon class="iconfont icon-gengduo" wx:if="{{isShowSideBar==false}}"></van-icon>
+          <van-icon class="iconfont icon-delete"  wx:if="{{isShowSideBar==true}}"></van-icon>
+      </van-button>
+    </Header>
+    <!-- 头部组件结束 -->
+    <!-- 分割线开始 -->
+    <view class="subtitle">医院动态</view>
+    <!-- 分割线结束 -->
+    <!-- 主要内容开始 -->
+        <view class="main_content">
+            <navigator  class="content_item" url="/pages/infoDetail/infoDetail?aid={{item.aid}}"
+            wx:for="{{articleList}}" wx:key="index">
+              <view class="title">{{item.title}}</view>
+              <view class="content">{{item.content}}</view>
+              <view class="dateTime">发布日期:{{tools.dateformat(item.dateTime)}}</view>
+            </navigator>
+        </view>
+    <!-- 主要内容结束 -->
+    <!-- 底部组件开始 -->
+    <footContent></footContent>
+    <!-- 底部组件结束 -->
+  </view>
+</view>
+<!-- 首页主页面结束 -->
+<!-- 侧边导航栏开始 -->
+<view class="sidebar">
+  <Sidebar wx:if="{{isShowSideBar}}" >
+  </Sidebar>
+</view>
+<!-- 侧边导航栏结束 bind:tabsItemChange="handleTabsChange"-->
+

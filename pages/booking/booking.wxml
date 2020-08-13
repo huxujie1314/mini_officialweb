@@ -1,0 +1,80 @@
+
+<!-- 首页主页面开始 -->
+<view class="{{isShowSideBar?'hide':'leftPart'}}">
+  <view class="container">
+    <!-- 头部组件开始 -->
+    <Header>
+      <van-button bind:click="triggerSidebar">
+          <van-icon class="iconfont icon-gengduo" wx:if="{{isShowSideBar==false}}"></van-icon>
+          <van-icon class="iconfont icon-delete"  wx:if="{{isShowSideBar==true}}"></van-icon>
+      </van-button>
+    </Header>
+    <!-- 头部组件结束 -->
+    <!-- 分割线开始 -->
+    <view class="subtitle">预约挂号</view>
+    <!-- 分割线结束 -->
+    <!-- 主要内容开始 -->
+        <view class="main_content">
+            <view>我元提供多种预约方式</view>
+            <view class="part1">
+                <view class="title">一、火一微信公众号</view>
+                <view>
+                    <view>请扫码关注后点击下方菜单“预约挂号”，按照提示逐步操作即可。</view> 
+                    <view class="img_row"><image mode="widthFix" src="https://shop.io.mi-img.com/app/shop/img?id=shop_b53ed555f23485b4d99cd916db6c63c8.jpeg" ></image></view>
+                    <view>绑定病人身份证号，实名注册</view>
+                    <view>点击首页“挂号就诊”，选择“预约挂号</view>
+                    <view>选择科室、专家、专家出诊时间，确定“立即预约”</view>
+                </view>
+            </view>
+            <view class="part1">
+                <view class="title">二、火星市公众健康服务平台</view>
+                <view>点击下面的链接跳转</view>
+                <navigator url="234567890">1234567890987654</navigator>
+                <view>打开新页面后选择“火星007一元”，再选择相应科室专家即可预约。</view>
+            </view>
+            <view class="part3">
+                <view class="title">三：电话预约： 鄞州人民医院预约挂号专线电话0574-87017701、114</view>
+                <view class="img_row"><image mode="heightFix" src="https://shop.io.mi-img.com/app/shop/img?id=shop_0a84ac874f706067ee469d04f0218fe4.jpeg"></image></view>
+            </view>
+            <view class="part1">
+                <view class="title">四：现场预约：</view>
+                <view>门诊一站式服务中心和自助机上均可办理现场预约挂号，工作人员和志愿者可提供帮助。</view>
+            </view>
+            <view class="part1">
+                <view class="title">五：诊间预约：</view>
+                <view>在医生工作站结束诊疗后，如需要复诊，可由医生完成复诊预约</view>
+            </view>
+            <view class="part1">
+                <view class="title">六：鄞州区社区医生工作站预约：</view>
+                <view>通过鄞州区分级诊疗平台，由社区医生完成预约挂号。</view>
+            </view>
+            <view class="part1">
+                <view class="title">七： 网络预约挂号：登陆网址及流程（以下不同界面操作基本相同）</view>
+                <view>通过鄞州区分级诊疗平台，由社区医生完成预约挂号。</view>
+                <view>本院网址:https://www.nbyzyy.com</view>
+                <view>省预约挂号平台[浙江在线]:http://guahao.zjol.com.cn</view>
+            </view>
+            <view class="part1">
+                <view class="title">八、温馨提示：</view>
+                <view>1、取号规则：患者应在预约时间段前凭个人登记的有效证件或预约短信验证码到门诊挂号窗口、门诊自助机支付挂号费并取号，再到相应诊室排队就诊。</view>
+                <view>2、退号规则：如患者无法履约，请提前一天原预约途径进行电话、网络、微信公众号退号；已经取号，可在医院服务台预约挂号专窗或各人工服务窗口退号或换号。</view>
+                <view>3、迟到处理：对就诊迟到而过号的患者，延后至当前就诊号的后五位就诊。</view>
+                <view>4、爽约“黑名单”处理：三个月内累计三次有预约挂号却未履约者，预约挂号平台，自动将爽约病人列入黑名单，并在之后的三个月内无法使用平台进行预约挂号，医院现场挂号不受影响。</view>
+                <view>5、电话预约、现场预约和网络预约能提供一周内的预约挂号服务；医院微信公众号、自助机能提供专家门诊二周内的预约挂号服务；诊间预约、病区工作站能提供专家门诊四周内的预约挂号服务。所有的预约方式不提供当天的预约挂号服务。</view>
+                <view>6、我院专家、专科、普通门诊信息如有变动，请以当日门诊信息公示为准，服务中心接到停换诊信息，会提前通知预约病人，根据病人意见换诊预约或退号。预约挂号相关问题可咨询0574-87017682</view>
+            </view>
+        </view>
+    <!-- 主要内容结束 -->
+    <!-- 底部组件开始 -->
+    <footContent></footContent>
+    <!-- 底部组件结束 -->
+  </view>
+</view>
+<!-- 首页主页面结束 -->
+<!-- 侧边导航栏开始 -->
+<view class="sidebar">
+  <Sidebar wx:if="{{isShowSideBar}}" >
+  </Sidebar>
+</view>
+<!-- 侧边导航栏结束 bind:tabsItemChange="handleTabsChange"-->
+

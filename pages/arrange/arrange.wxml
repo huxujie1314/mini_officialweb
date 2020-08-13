@@ -1,0 +1,58 @@
+
+<!-- 首页主页面开始 -->
+<view class="{{isShowSideBar?'hide':'leftPart'}}">
+  <view class="container">
+    <!-- 头部组件开始 -->
+    <Header>
+      <van-button bind:click="triggerSidebar">
+          <van-icon class="iconfont icon-gengduo" wx:if="{{isShowSideBar==false}}"></van-icon>
+          <van-icon class="iconfont icon-delete"  wx:if="{{isShowSideBar==true}}"></van-icon>
+      </van-button>
+    </Header>
+    <!-- 头部组件结束 -->
+    <!-- 分割线开始 -->
+    <view class="subtitle">出诊安排</view>
+    <!-- 分割线结束 -->
+    <!-- 主要内容开始 -->
+        <view class="main_content">
+            <view class="left_menu">
+                <van-sidebar active-key="{{ activeKey }}" bind:change="onChange1">
+                    <van-sidebar-item title="{{item}}" wx:for="{{leftMenu}}" wx:key="*this"/>
+                </van-sidebar>
+            </view>
+            <view class="rightContent">
+                <van-collapse accordion value="{{ activeName }}" bind:change="onChange">
+                <van-collapse-item title="{{item1.typeName}}" name="{{index1}}" 
+                wx:for="{{rightContent}}" wx:key="index1" wx:for-index="index1" wx:for-item="item1">
+                   <view class="content_detail">
+                       <view>上午 (07:30~11:30)</view>
+                       <view class="dept" wx:for="{{item1.time1}}"
+                       wx:for-item="item2" wx:for-index="index2" wx:key="index2">
+                           <view>{{item2.deptName}}</view>
+                           <view>{{item2.doctor}}</view>
+                       </view>
+                       <view>下午 (14:00~17:00)</view>
+                       <view class="dept" wx:for="{{item1.time2}}"
+                        wx:for-item="item3" wx:for-index="index3" wx:key="index3">
+                           <view>{{item3.deptName}}</view>
+                           <view>{{item3.doctor}}</view>
+                       </view>
+                   </view> 
+                </van-collapse-item>
+            </van-collapse>
+            </view>
+        </view>
+    <!-- 主要内容结束 -->
+    <!-- 底部组件开始 -->
+    <footContent></footContent>
+    <!-- 底部组件结束 -->
+  </view>
+</view>
+<!-- 首页主页面结束 -->
+<!-- 侧边导航栏开始 -->
+<view class="sidebar">
+  <Sidebar wx:if="{{isShowSideBar}}" >
+  </Sidebar>
+</view>
+<!-- 侧边导航栏结束 bind:tabsItemChange="handleTabsChange"-->
+

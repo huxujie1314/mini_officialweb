@@ -1,0 +1,10 @@
+<!--components/footContent/footContent.wxml-->
+<view class="footer">
+    <view class="first">版权所有:火星007一元
+        <navigator url="https://www.nbyzyy.com/Page">【电脑端】</navigator>
+          <text class="text"> 火ICP备23456682号-1</text>
+    </view>
+    <view class="second"><image class="image" src="https://www.nbyzyy.com/Content/WebApp/images/beian_img.png" />
+     火公网安备11000002000001号</view>
+</view>
+

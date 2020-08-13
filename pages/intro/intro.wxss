@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+.container .main_content .image_row {
+  height: 750rpx;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20rpx 20rpx 0 20rpx; }
+  .container .main_content .image_row image {
+    height: 100%;
+    width: 100%; }
+
+.container .main_content .content_detail {
+  font-size: 32rpx;
+  font-family: '宋体';
+  color: #111;
+  line-height: 150%;
+  text-indent: 64rpx;
+  padding: 0 30rpx; }
+  .container .main_content .content_detail view {
+    margin: 56rpx 0; }
+
+

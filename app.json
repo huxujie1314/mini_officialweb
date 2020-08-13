@@ -1,0 +1,32 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/intro/intro",
+    "pages/arrange/arrange",
+    "pages/deptList/deptList",
+    "pages/deptDetail/deptDetail",
+    "pages/booking/booking",
+    "pages/expertIntro/expertIntro",
+    "pages/infos/infos",
+    "pages/contact/contact",
+    "pages/infoDetail/infoDetail",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "火星007一元",
+    "navigationBarTextStyle":"black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "van-button": "@vant/weapp/button/index",
+    "van-image": "@vant/weapp/image/index",
+    "van-icon": "@vant/weapp/icon/index",
+    "van-sidebar": "@vant/weapp/sidebar/index",
+    "van-sidebar-item": "@vant/weapp/sidebar-item/index",
+    "van-divider": "@vant/weapp/divider/index",
+    "van-collapse": "@vant/weapp/collapse/index",
+    "van-collapse-item": "@vant/weapp/collapse-item/index"
+  }
+}

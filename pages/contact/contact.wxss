@@ -1,0 +1,40 @@
+.container .van-button--default {
+  font-size: 20px;
+  float: right;
+  background-color: #fff;
+  border: 0 !important;
+  margin-top: 40rpx;
+  margin-right: 20rpx; }
+  .container .van-button--default .iconfont {
+    font-size: 50rpx;
+    font-weight: 600;
+    color: #2d7ca3; }
+
+.container .subtitle {
+  height: 70rpx;
+  width: 100%;
+  text-align: center;
+  line-height: 70rpx;
+  font-size: 32rpx;
+  background-image: linear-gradient(to right, #2d7ca3, #00a3be);
+  color: #fff; }
+
+.container .main_content {
+  color: #555;
+  font-size: 28rpx;
+  padding: 30rpx; }
+  .container .main_content .topPart {
+    border-bottom: 1px solid #ccc; }
+    .container .main_content .topPart view {
+      margin: 20rpx 0;
+      display: flex;
+      justify-content: space-between; }
+  .container .main_content .bottomPart view {
+    margin: 20rpx 0;
+    display: flex;
+    justify-content: space-between; }
+    .container .main_content .bottomPart view .line {
+      font-size: 28rpx;
+      color: #333;
+      flex-basis: 50%;
+      font-weight: 600; }

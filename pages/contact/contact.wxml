@@ -1,0 +1,92 @@
+
+<!-- 首页主页面开始 -->
+<view class="{{isShowSideBar?'hide':'leftPart'}}">
+  <view class="container">
+    <!-- 头部组件开始 -->
+    <Header>
+      <van-button bind:click="triggerSidebar">
+          <van-icon class="iconfont icon-gengduo" wx:if="{{isShowSideBar==false}}"></van-icon>
+          <van-icon class="iconfont icon-delete"  wx:if="{{isShowSideBar==true}}"></van-icon>
+      </van-button>
+    </Header>
+    <!-- 头部组件结束 -->
+    <!-- 分割线开始 -->
+    <view class="subtitle">联系我们</view>
+    <!-- 分割线结束 -->
+    <!-- 主要内容开始 -->
+        <view class="main_content">
+           <view class="topPart">
+                <view >
+                   <text>地址：</text>
+                   <text>宁波市百丈东路251号(315040)</text>
+                </view>
+                <view >
+                   <text>电话总机：</text>
+                   <text>(0574) 87016888</text>
+                </view>
+                <view >
+                   <text>24小时预约挂号电话：</text>
+                   <text>(0574) 87017701</text>
+                </view>
+                <view >
+                   <text>门诊一站式服务中心：</text>
+                   <text>(0574) 87017217 (8:00-17:00)</text>
+                </view>
+                <view >
+                   <text>脊柱微创中心咨询电话：</text>
+                   <text>18067510795</text>
+                </view>
+                <view >
+                   <text>急诊电话：</text>
+                   <text>(0574) 87017200（仅供急诊就诊咨询）</text>
+                </view>
+                <view >
+                    <text>监督电话：</text>
+                    <text>(0574) 87017392（工作日上班时间）</text>
+                </view>   
+                <view >
+                    <text>传真：</text>
+                    <text>(0574) 87017272</text>
+                </view>      
+                <view >
+                    <text>E-MAIL：</text>
+                    <text>yb@nbyzyy.com</text>
+                </view>    
+                <view >
+                    <text>网址：</text>
+                    <text></text>
+                </view>    
+                   
+                   
+
+               
+           </view>
+           <view class="bottomPart">
+               <view>
+                   <view class="line">直达线一：</view>
+                   <view> 3、15、16、103、216、302、342、354、357、506、517、620 到鄞州人民医院、银殿宾馆站下。</view>
+               </view>
+               <view>
+                   <view class="line">直达线二：</view>
+                   <view> 3、101、103、105、117、342、367、514、517、527、560、804、901 到甬港新村下。</view>
+               </view>
+               <view>
+                   <view class="line">直达线三：</view>
+                   <view> 10、101、111、105、108、360、367、506、514、560、514、560、804 到舟孟新村下。</view>
+               </view>
+           </view>
+        </view>
+    <!-- 主要内容结束 -->
+    <!-- 底部组件开始 -->
+    <footContent></footContent>
+    <!-- 底部组件结束 -->
+  </view>
+</view>
+<!-- 首页主页面结束 -->
+<!-- 侧边导航栏开始 -->
+<view class="sidebar">
+  <Sidebar wx:if="{{isShowSideBar}}" >
+  </Sidebar>
+</view>
+<!-- 侧边导航栏结束 bind:tabsItemChange="handleTabsChange"-->
+

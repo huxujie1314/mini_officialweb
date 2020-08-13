@@ -1,0 +1,6 @@
+<view class="header">
+    <navigator url="/pages/index/index" class="navigator1">
+        <image src="https://www.nbyzyy.com/Content/WebApp/images/logo2020.jpg" class="image1"></image>
+    </navigator>
+    <slot></slot>
+</view>

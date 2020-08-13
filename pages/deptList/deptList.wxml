@@ -1,0 +1,45 @@
+
+<!-- 首页主页面开始 -->
+<view class="{{isShowSideBar?'hide':'leftPart'}}">
+  <view class="container">
+    <!-- 头部组件开始 -->
+    <Header>
+      <van-button bind:click="triggerSidebar">
+          <van-icon class="iconfont icon-gengduo" wx:if="{{isShowSideBar==false}}"></van-icon>
+          <van-icon class="iconfont icon-delete"  wx:if="{{isShowSideBar==true}}"></van-icon>
+      </van-button>
+    </Header>
+    <!-- 头部组件结束 -->
+    <!-- 分割线开始 -->
+    <view class="subtitle">科室介绍</view>
+    <!-- 分割线结束 -->
+    <!-- 主要内容开始 -->
+        <view class="main_content">
+            <view class="content_item" wx:for="{{deptList}}" wx:for-item="item1"
+            wx:for-index="index1" wx:key="index1">
+              <view class="itemLeft">
+                 <image mode="widthFix"  src="{{item1.typeImg}}"></image>
+                 <view>{{item1.typeName}}</view>
+              </view>
+              <view class="itemRight" >
+                 <navigator url="/pages/deptDetail/deptDetail?deptId={{item2.deptId}}"
+                 wx:for="{{item1.children}}" wx:for-index="index2" wx:for-item="item2"
+                 wx:key="index2">{{item2.deptName}}</navigator>
+              </view>
+            </view>
+            
+        </view>
+    <!-- 主要内容结束 -->
+    <!-- 底部组件开始 -->
+    <footContent></footContent>
+    <!-- 底部组件结束 -->
+  </view>
+</view>
+<!-- 首页主页面结束 -->
+<!-- 侧边导航栏开始 -->
+<view class="sidebar">
+  <Sidebar wx:if="{{isShowSideBar}}" >
+  </Sidebar>
+</view>
+<!-- 侧边导航栏结束 bind:tabsItemChange="handleTabsChange"-->
+

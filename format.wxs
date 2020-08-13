@@ -1,0 +1,15 @@
+//日期格式化函数
+function dateformat(value){
+    value=parseInt(value);
+    var date=getDate(value);
+    var year=date.getFullYear();
+    var month=date.getMonth()+1;
+    month=month<10?'0'+month:month;
+    var day=date.getDate();
+    day=day<10?'0'+day:day;
+    return year+'-'+month+'-'+day;
+  }
+
+module.exports={
+    dateformat:dateformat
+  }

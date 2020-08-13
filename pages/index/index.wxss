@@ -1,0 +1,170 @@
+
+
+.container .van-divider {
+  margin: 0 !important;
+  border: 5rpx solid #2d7ca3 !important; }
+
+.container .index_swiper swiper {
+  width: 100%;
+  height: 305rpx; }
+  .container .index_swiper swiper image {
+    width: 100%;
+    height: 100%; }
+
+.container .index_expert .expert_title_row {
+  height: 80rpx;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  border-bottom: 1px solid #ccc; }
+  .container .index_expert .expert_title_row .title {
+    width: 250rpx;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2d7ca3;
+    border-bottom: 1px solid currentColor;
+    font-size: 35rpx;
+    padding-left: 30rpx; }
+  .container .index_expert .expert_title_row .title_button {
+    margin-right: 30rpx; }
+    .container .index_expert .expert_title_row .title_button .button {
+      height: 45rpx;
+      width: 45rpx;
+      border-radius: 50%;
+      background-color: #fff;
+      color: #2d7ca3;
+      border: 1px solid currentColor;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .container .index_expert .expert_title_row .title_button .button .iconfont {
+        font-size: 24rpx; }
+
+.container .index_expert .expert_swiper {
+  width: 100%;
+  height: 160rpx;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center; }
+  .container .index_expert .expert_swiper swiper {
+    height: 100%;
+    width: 70%; }
+    .container .index_expert .expert_swiper swiper .item_detail {
+      height: 80rpx;
+      display: flex;
+      font-size: 30rpx; }
+      .container .index_expert .expert_swiper swiper .item_detail navigator {
+        flex: 2;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        color: #2d7ca3; }
+      .container .index_expert .expert_swiper swiper .item_detail view {
+        flex: 1;
+        display: flex;
+        justify-content: start;
+        align-items: center; }
+
+.container .index_expert .serve_time {
+  height: 55rpx;
+  margin-top: 10rpx;
+  padding: 10rpx 0;
+  color: #fff;
+  background-color: #2d7ca3;
+  font-size: 24rpx;
+  text-align: center; }
+
+.container .index_middleBar {
+  height: 256rpx;
+  padding: 30rpx;
+  margin-bottom: 30rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1rpx solid #ccc; }
+  .container .index_middleBar .middleBar_item {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .container .index_middleBar .middleBar_item .img_row {
+      height: 112rpx;
+      width: 112rpx;
+      margin-bottom: 14rpx;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .container .index_middleBar .middleBar_item .img_row image {
+        height: 80%;
+        width: 80%; }
+
+.container .index_info .title_row {
+  height: 80rpx;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  border-bottom: 1px solid #ccc; }
+  .container .index_info .title_row .title {
+    width: 250rpx;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2d7ca3;
+    border-bottom: 1px solid currentColor;
+    font-size: 35rpx;
+    padding-left: 30rpx; }
+  .container .index_info .title_row .title_button {
+    margin-right: 30rpx; }
+    .container .index_info .title_row .title_button .button {
+      height: 45rpx;
+      width: 45rpx;
+      border-radius: 50%;
+      background-color: #fff;
+      color: #2d7ca3;
+      border: 1px solid currentColor;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .container .index_info .title_row .title_button .button .iconfont {
+        font-size: 24rpx; }
+
+.container .index_info .info_content {
+  height: 300rpx;
+  padding: 30rpx; }
+  .container .index_info .info_content .info_content_item {
+    height: 48rpx;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28rpx; }
+    .container .index_info .info_content .info_content_item text {
+      flex: 1;
+      color: orange;
+      font-size: 50rpx; }
+    .container .index_info .info_content .info_content_item navigator {
+      flex: 16;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      margin-right: 20rpx; }
+    .container .index_info .info_content .info_content_item .date {
+      flex: 3; }
+
+.container .bottom_image_row {
+  height: 150rpx;
+  width: 100%; }
+  .container .bottom_image_row image {
+    width: 100%;
+    height: 100%; }
+
